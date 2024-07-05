@@ -1,0 +1,40 @@
+Kiah Johnson
+CS536 - Homework Assignment Five
+Union of Two Convex Polygons
+
+Union of Two Convex Polygons Evaluator with a PostScript File Generator
+
+Features
+    This python script computes the union of two 2D convex polygons.
+    
+    - Input: Two polygons in a PostScript file.
+    - Output: A PostScript file with the generated convex polygon.
+
+Environment
+    - Language: Python 3
+    - OS: Compatible with Windows, macOS, and Linux
+    - Interpreter: Python interpreter
+
+Usage
+    Running the Script
+        1. Clone or download the script with example inputs into local machine
+        2. Open terminal with directory containing the script
+        3. Run the script with the following structure:
+            ./CG_hw5 -f filename
+        
+        *You can replace 'filename' with desired value*
+
+    Arguments
+        - '-f filename': The file containing the two polygons
+
+    Output
+        The script prints a standard out version of the PostScript file and can generate a separate Postscript file which is placed within the same directory as script.
+
+Examples
+    1. This command evaluates the union of two convex polygons using the default input file, meaning the program will take polygons from the default PostScript file 'HW5_a_in.ps'. It will print to standard out:
+
+        ./CG_hw5 -f filename
+
+    2. This command evaluates the union of two convex polygons using the polygons from 'input_polygons.ps'. The output will be saved to a file called 'my_polygon.ps':
+
+        ./CG_hw5 -f input_polygons.ps > my_polygon.ps

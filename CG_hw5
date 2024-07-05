@@ -1,0 +1,21 @@
+#!/bin/bash
+
+filename="HW5_a_in.ps"
+
+while getopts ":f:" opt; do
+  case $opt in
+    f)
+      filename=$OPTARG
+      ;;
+    \?)
+      echo "Invalid option: -$OPTARG" >&2
+      exit 1
+      ;;
+    :)
+      echo "Option -$OPTARG requires an argument." >&2
+      exit 1
+      ;;
+  esac
+done
+
+python3 convex_polygons.py -f "$filename"
